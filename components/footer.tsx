@@ -18,7 +18,7 @@ export default function Footer() {
               className="flex items-center space-x-2 text-white hover:text-brand-mint transition-colors"
             >
               <Phone className="h-5 w-5" />
-              <span className="font-medium">(941) 123-4567</span>
+              <span className="font-medium">(941) 777-7465</span>
             </a>
           </div>
         </div>
