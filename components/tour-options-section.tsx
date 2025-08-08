@@ -13,9 +13,9 @@ export default function TourOptionsSection() {
     {
       id: '2-hour',
       title: '2-Hour Bay Cruise',
-      price: '$89',
+      price: '$400',
       duration: '2 Hours',
-      capacity: 'Up to 12 People',
+      capacity: 'Up to 6 People',
       description: 'Perfect for a quick escape! Cruise the beautiful Sarasota Bay, see dolphins, and enjoy stunning views.',
       features: [
         'Dolphin watching opportunities',
@@ -29,9 +29,9 @@ export default function TourOptionsSection() {
     {
       id: '4-hour',
       title: '4-Hour Adventure',
-      price: '$149',
+      price: '$700',
       duration: '4 Hours',
-      capacity: 'Up to 12 People',
+      capacity: 'Up to 6 People',
       description: 'Our signature experience! Extended cruise with multiple stops, wildlife viewing, and more time to relax.',
       features: [
         'Extended wildlife viewing',
