@@ -43,6 +43,24 @@ export default function TourOptionsSection() {
       ],
       popular: true
     }
+    },
+    {
+      id: 'early-sunset',
+      title: 'Early Riser or Sunset',
+      price: '$300',
+      duration: '1.5 Hours',
+      capacity: 'Up to 6 People',
+      description: 'Perfect timing for golden hour magic! Catch the sunrise or sunset on our beautiful pink Cadillac boat.',
+      features: [
+        'Golden hour lighting',
+        'Peaceful morning or evening cruise',
+        'Perfect for photography',
+        'BYOB welcome',
+        'Professional captain',
+        'Safety equipment included'
+      ],
+      popular: false
+    }
   ];
 
   return (
@@ -58,6 +76,7 @@ export default function TourOptionsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {tours.map((tour) => (
             <div
               key={tour.id}
