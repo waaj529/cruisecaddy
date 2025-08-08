@@ -23,7 +23,6 @@ export default function TourOptionsSection() {
         'Perfect for photography',
         'BYOB welcome',
         'Professional captain',
-        'Safety equipment included'
       ],
       popular: false
     },
