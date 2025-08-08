@@ -67,12 +67,12 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection('hero')}
+            <a
+              href="/"
               className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
             >
               Home
-            </button>
+            </a>
             <button
               onClick={() => scrollToSection('tours')}
               className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
@@ -120,12 +120,12 @@ export default function Header() {
         )}
       >
         <div className="container mx-auto px-4 py-6 space-y-4 text-center">
-          <button
-            onClick={() => scrollToSection('hero')}
+          <a
+            href="/"
             className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
           >
             Home
-          </button>
+          </a>
           <button
             onClick={() => scrollToSection('tours')}
             className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
