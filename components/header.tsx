@@ -80,12 +80,6 @@ export default function Header() {
               Tours
             </button>
             <a
-              href="/#tours"
-              className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
-            >
-              Tours
-            </a>
-            <a
               href="/our-story"
               className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
             >
@@ -138,12 +132,6 @@ export default function Header() {
           >
             Tours
           </button>
-          <a
-            href="/#tours"
-            className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
-          >
-            Tours
-          </a>
           <a
             href="/our-story"
             className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
