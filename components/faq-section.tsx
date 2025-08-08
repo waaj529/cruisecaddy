@@ -108,7 +108,7 @@ export default function FAQSection() {
             href="tel:+1234567890"
             className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-brand-teal text-brand-teal rounded-lg hover:bg-brand-teal hover:text-white transition-colors font-medium"
           >
-            Call (941) 123-4567
+            Call (941) 777-7465
           </a>
         </div>
       </div>
