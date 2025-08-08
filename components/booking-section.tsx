@@ -90,7 +90,7 @@ export default function BookingSection() {
             <p className="text-sm text-brand-teal/70">
               Questions about booking? Call us at{' '}
               <a href="tel:+1234567890" className="text-brand-accent font-medium hover:underline">
-                (941) 123-4567
+                (941) 777-7465
               </a>
             </p>
           </div>
