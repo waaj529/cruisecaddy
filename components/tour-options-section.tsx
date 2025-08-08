@@ -43,7 +43,7 @@ export default function TourOptionsSection() {
       ],
       popular: true
     },
-    {
+    ,
       id: 'early-sunset',
       title: 'Early Riser or Sunset',
       price: '$300',
