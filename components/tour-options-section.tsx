@@ -22,7 +22,6 @@ export default function TourOptionsSection() {
         'Peaceful morning or evening cruise',
         'Perfect for photography',
         'BYOB welcome',
-        'Professional captain',
       ],
       popular: false
     },
@@ -55,8 +54,6 @@ export default function TourOptionsSection() {
         'Swimming opportunities',
         'BYOB welcome',
         'Cooler and ice provided',
-        'Professional captain',
-        'Safety equipment included'
       ],
       popular: false
     }
