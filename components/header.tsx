@@ -148,7 +148,7 @@ export default function Header() {
             className="flex items-center justify-center space-x-2 py-2 text-brand-teal hover:text-brand-accent transition-colors"
           >
             <Phone className="h-4 w-4" />
-            <span className="font-medium">(941) 123-4567</span>
+            <span className="font-medium">(941) 777-7465</span>
           </a>
         </div>
       </div>
