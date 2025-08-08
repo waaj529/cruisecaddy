@@ -59,7 +59,7 @@ export default function TourOptionsSection() {
         'Professional captain',
         'Safety equipment included'
       ],
-      popular: true
+      popular: false
     }
   ];
 
