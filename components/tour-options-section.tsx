@@ -11,39 +11,6 @@ export default function TourOptionsSection() {
 
   const tours = [
     {
-      id: '2-hour',
-      title: '2-Hour Bay Cruise',
-      price: '$400',
-      duration: '2 Hours',
-      capacity: 'Up to 6 People',
-      description: 'Perfect for a quick escape! Cruise the beautiful Sarasota Bay, see dolphins, and enjoy stunning views.',
-      features: [
-        'Dolphin watching opportunities',
-        'Scenic bay tour',
-        'BYOB welcome',
-        'Professional captain',
-        'Safety equipment included'
-      ],
-      popular: false
-    },
-    {
-      id: '4-hour',
-      title: '4-Hour Adventure',
-      price: '$700',
-      duration: '4 Hours',
-      capacity: 'Up to 6 People',
-      description: 'Our signature experience! Extended cruise with multiple stops, wildlife viewing, and more time to relax.',
-      features: [
-        'Extended wildlife viewing',
-        'Multiple scenic stops',
-        'Swimming opportunities',
-        'BYOB welcome',
-        'Cooler and ice provided',
-        'Professional captain'
-      ],
-      popular: true
-    },
-    {
       id: 'early-sunset',
       title: 'Early Riser or Sunset',
       price: '$300',
@@ -59,6 +26,40 @@ export default function TourOptionsSection() {
         'Safety equipment included'
       ],
       popular: false
+    },
+    {
+      id: '2-hour',
+      title: '2-Hour Bay Cruise',
+      price: '$400',
+      duration: '2 Hours',
+      capacity: 'Up to 6 People',
+      description: 'Perfect for a quick escape! Cruise the beautiful Sarasota Bay, see dolphins, and enjoy stunning views.',
+      features: [
+        'Dolphin watching opportunities',
+        'Scenic bay tour',
+        'BYOB welcome',
+        'Professional captain',
+        'Safety equipment included'
+      ],
+      popular: true
+    },
+    {
+      id: '4-hour',
+      title: '4-Hour Adventure',
+      price: '$700',
+      duration: '4 Hours',
+      capacity: 'Up to 6 People',
+      description: 'Our signature experience! Extended cruise with multiple stops, wildlife viewing, and more time to relax.',
+      features: [
+        'Extended wildlife viewing',
+        'Multiple scenic stops',
+        'Swimming opportunities',
+        'BYOB welcome',
+        'Cooler and ice provided',
+        'Professional captain',
+        'Safety equipment included'
+      ],
+      popular: true
     }
   ];
 
