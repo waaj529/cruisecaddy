@@ -1,0 +1,22 @@
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import OurStoryHero from '@/components/our-story-hero';
+import OurStoryContent from '@/components/our-story-content';
+import OurStoryGallery from '@/components/our-story-gallery';
+
+export const metadata = {
+  title: 'Our Story - Cruisecaddy Pink Cadillac Boat Tours',
+  description: 'Learn about the story behind Cruisecaddy and our unique pink Cadillac boat tours in Sarasota Bay.',
+};
+
+export default function OurStoryPage() {
+  return (
+    <main className="min-h-screen">
+      <Header />
+      <OurStoryHero />
+      <OurStoryContent />
+      <OurStoryGallery />
+      <Footer />
+    </main>
+  );
+}
