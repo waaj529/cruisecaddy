@@ -53,7 +53,7 @@ export default function ContactSection() {
                   </h3>
                   <p className="text-brand-teal/80 mb-2">
                     <a href="tel:+1234567890" className="hover:text-brand-accent transition-colors">
-                      (941) 123-4567
+                      (941) 777-7465
                     </a>
                   </p>
                   <p className="text-sm text-brand-teal/70">
