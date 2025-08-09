@@ -6,7 +6,7 @@ import { Calendar, Clock, Wine } from 'lucide-react';
 export default function BookingSection() {
   const handleBookTour = () => {
     // This would integrate with Setmore
-    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank');
+    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank', 'noopener,noreferrer');
   };
 
   const steps = [
@@ -89,7 +89,7 @@ export default function BookingSection() {
             
             <p className="text-sm text-brand-teal/70">
               Questions about booking? Call us at{' '}
-              <a href="tel:+1234567890" className="text-brand-accent font-medium hover:underline">
+              <a href="tel:+19417777465" className="text-brand-accent font-medium hover:underline">
                 (941) 777-7465
               </a>
             </p>

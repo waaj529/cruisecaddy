@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function HeroSection() {
   const handleBookTour = () => {
     // This would integrate with Setmore
-    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank');
+    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank', 'noopener,noreferrer');
   };
 
   return (

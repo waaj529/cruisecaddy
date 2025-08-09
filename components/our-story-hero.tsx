@@ -21,7 +21,7 @@ export default function OurStoryHero() {
             Our Story
           </h1>
           <p className="text-xl md:text-2xl text-brand-teal/80 max-w-2xl mx-auto">
-            The journey behind Sarasota's most unique boat tour experience
+            The journey behind Sarasota&rsquo;s most unique boat tour experience
           </p>
         </div>
       </div>

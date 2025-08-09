@@ -10,7 +10,7 @@ export default function AboutBoatSection() {
               Meet Our Pink Cadillac Boat
             </h2>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
-              Our one-of-a-kind pink Cadillac boat isn't just a vessel – it's an experience! 
+              Our one-of-a-kind pink Cadillac boat isn&rsquo;t just a vessel – it&rsquo;s an experience! 
               Designed to turn heads and create memories, this unique boat combines classic 
               Cadillac style with modern comfort and safety.
             </p>

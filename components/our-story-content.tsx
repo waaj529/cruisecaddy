@@ -16,7 +16,7 @@ export default function OurStoryContent() {
             </p>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
               After years of planning and custom design work, the pink Cadillac boat was born. 
-              This isn't just any boat – it's a carefully crafted vessel that captures the 
+              This isn&rsquo;t just any boat – it&rsquo;s a carefully crafted vessel that captures the 
               elegance and style of a classic Cadillac while providing all the safety and 
               comfort needed for the perfect bay cruise.
             </p>
@@ -55,8 +55,8 @@ export default function OurStoryContent() {
               Our Mission
             </h2>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
-              We believe that every moment on the water should be special. That's why we've 
-              created more than just a boat tour – we've crafted an experience that brings 
+              We believe that every moment on the water should be special. That&rsquo;s why we&rsquo;ve 
+              created more than just a boat tour – we&rsquo;ve crafted an experience that brings 
               people together, creates lasting memories, and showcases the natural beauty 
               of Sarasota Bay.
             </p>

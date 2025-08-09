@@ -18,7 +18,7 @@ export default function ContactSection() {
             Find Us in Beautiful Sarasota
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            We're conveniently located at Marina Jack in downtown Sarasota, making it easy to start your pink Cadillac boat adventure.
+            We&rsquo;re conveniently located at Marina Jack in downtown Sarasota, making it easy to start your pink Cadillac boat adventure.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export default function ContactSection() {
                     Contact Information
                   </h3>
                   <p className="text-brand-teal/80 mb-2">
-                    <a href="tel:+1234567890" className="hover:text-brand-accent transition-colors">
+                    <a href="tel:+19417777465" className="hover:text-brand-accent transition-colors">
                       (941) 777-7465
                     </a>
                   </p>
@@ -86,7 +86,7 @@ export default function ContactSection() {
                 Book a Tour
               </Button>
               <a
-                href="tel:+1234567890"
+                href="tel:+19417777465"
                 className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-white text-brand-teal border-2 border-brand-teal rounded-lg hover:bg-brand-teal hover:text-white transition-colors font-medium"
               >
                 Call Now

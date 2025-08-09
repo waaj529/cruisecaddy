@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Menu, X, Phone, Anchor } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -9,32 +9,34 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const lastScrollYRef = useRef(0);
 
   useEffect(() => {
     const controlNavbar = () => {
       const currentScrollY = window.scrollY;
-      
-      if (currentScrollY > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
 
+      setIsScrolled(currentScrollY > 100);
+
+      const lastScrollY = lastScrollYRef.current;
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
       }
 
-      setLastScrollY(currentScrollY);
+      lastScrollYRef.current = currentScrollY;
     };
 
-    window.addEventListener('scroll', controlNavbar);
+    window.addEventListener('scroll', controlNavbar, { passive: true });
     return () => window.removeEventListener('scroll', controlNavbar);
-  }, [lastScrollY]);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
+    const isHomePage = typeof window !== 'undefined' && window.location.pathname === '/';
+    if (!isHomePage) {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -44,7 +46,7 @@ export default function Header() {
 
   const handleBookTour = () => {
     // This would integrate with Setmore
-    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank');
+    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -86,7 +88,7 @@ export default function Header() {
               Our Story
             </a>
             <a
-              href="tel:+1234567890"
+              href="tel:+19417777465"
               className="flex items-center space-x-2 text-brand-teal hover:text-brand-accent transition-colors"
             >
               <Phone className="h-4 w-4" />
@@ -106,6 +108,7 @@ export default function Header() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 text-brand-teal hover:text-brand-accent transition-colors"
             aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -144,7 +147,7 @@ export default function Header() {
             </Button>
           </div>
           <a
-            href="tel:+1234567890"
+            href="tel:+19417777465"
             className="flex items-center justify-center space-x-2 py-2 text-brand-teal hover:text-brand-accent transition-colors"
           >
             <Phone className="h-4 w-4" />

@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://cruisecaddy.com'),
   title: 'Cruisecaddy - Pink Cadillac Boat Tours in Sarasota | BYOB Cruise Experience',
   description: 'Experience Sarasota Bay like never before! Join our unique BYOB cruise tours on a pink Cadillac-shaped boat. 2-hour and 4-hour tours available. Book your unforgettable adventure today!',
   keywords: 'Sarasota boat tours, BYOB cruise, pink Cadillac boat, Sarasota Bay, cruise tours Florida, unique boat experience',

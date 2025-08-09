@@ -6,7 +6,7 @@ import { Clock, Users, Waves, MapPin } from 'lucide-react';
 export default function TourOptionsSection() {
   const handleBookTour = () => {
     // This would integrate with Setmore
-    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank');
+    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank', 'noopener,noreferrer');
   };
 
   const tours = [

@@ -97,7 +97,7 @@ export default function ReviewsSection() {
             What Our Guests Say
           </h2>
           <p className="text-xl text-brand-teal/80 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our happy passengers have to say about their Cruisecaddy experience.
+            Don&rsquo;t just take our word for it. Here&rsquo;s what our happy passengers have to say about their Cruisecaddy experience.
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export default function ReviewsSection() {
                 </div>
                 
                 <p className="text-brand-teal/90 mb-4 leading-relaxed italic">
-                  "{review.text}"
+                  &ldquo;{review.text}&rdquo;
                 </p>
                 
                 <div className="border-t border-brand-pink/20 pt-4">
@@ -179,7 +179,7 @@ export default function ReviewsSection() {
 
         <div className="text-center mt-12">
           <p className="text-brand-teal/70 mb-4">
-            Join hundreds of satisfied guests who've experienced the magic of Cruisecaddy
+            Join hundreds of satisfied guests who&rsquo;ve experienced the magic of Cruisecaddy
           </p>
           <div className="flex items-center justify-center space-x-1">
             <div className="flex text-brand-accent">
