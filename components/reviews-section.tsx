@@ -63,6 +63,14 @@ export default function ReviewsSection() {
       rating: 5,
       text: "Best group activity ever! We had 6 people and everyone had a blast. The boat is so cool and unique - nothing like it anywhere else. Great value and amazing memories made!",
       date: '5 days ago'
+    },
+    {
+      id: 8,
+      name: 'Emily & Jake W.',
+      location: 'Fort Myers, FL',
+      rating: 5,
+      text: "Our honeymoon cruise was absolutely perfect! The pink Cadillac boat is so romantic and unique. Captain was wonderful and the sunset views were breathtaking. Highly recommend for special occasions!",
+      date: '3 days ago'
     }
   ];
 
