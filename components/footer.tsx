@@ -1,32 +1,133 @@
-import { Phone, Anchor } from 'lucide-react';
+import { Phone, Anchor, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-teal py-12">
+    <footer className="bg-brand-teal py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <Anchor className="h-8 w-8 text-brand-mint" />
-            <span className="text-2xl font-bold text-white">
-              Cruisecaddy
-            </span>
+        {/* Main Footer Content */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Company Info */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center space-x-3 mb-6">
+              <Anchor className="h-10 w-10 text-brand-mint" />
+              <span className="text-3xl font-bold text-white">
+                Cruisecaddy
+              </span>
+            </div>
+            <p className="text-white/80 mb-6 leading-relaxed max-w-md">
+              Experience Sarasota Bay like never before on our unique pink Cadillac boat. 
+              BYOB friendly tours with unforgettable views and memories that last a lifetime.
+            </p>
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-brand-mint hover:text-brand-teal transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-brand-mint hover:text-brand-teal transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
-          <div className="flex items-center space-x-6">
-            <a
-              href="tel:+1234567890"
-              className="flex items-center space-x-2 text-white hover:text-brand-mint transition-colors"
-            >
-              <Phone className="h-5 w-5" />
-              <span className="font-medium">(941) 777-7465</span>
-            </a>
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="/" className="text-white/80 hover:text-brand-mint transition-colors">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/#tours" className="text-white/80 hover:text-brand-mint transition-colors">
+                  Tours
+                </a>
+              </li>
+              <li>
+                <a href="/our-story" className="text-white/80 hover:text-brand-mint transition-colors">
+                  Our Story
+                </a>
+              </li>
+              <li>
+                <a href="/#booking" className="text-white/80 hover:text-brand-mint transition-colors">
+                  Book Now
+                </a>
+              </li>
+              <li>
+                <a href="/#contact" className="text-white/80 hover:text-brand-mint transition-colors">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-xl font-semibold text-white mb-4">Contact Info</h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <Phone className="h-5 w-5 text-brand-mint mt-0.5 flex-shrink-0" />
+                <div>
+                  <a
+                    href="tel:+19417777465"
+                    className="text-white hover:text-brand-mint transition-colors font-medium"
+                  >
+                    (941) 777-7465
+                  </a>
+                  <p className="text-white/60 text-sm">Available 7 days a week</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-brand-mint mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-white/80">
+                    Marina Jack<br />
+                    2 Marina Plaza<br />
+                    Sarasota, FL 34236
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <Clock className="h-5 w-5 text-brand-mint mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-white/80 text-sm">
+                    Tours: 8 AM - 8 PM<br />
+                    Booking: 8 AM - 6 PM
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-white/80">
-            © 2025 Cruisecaddy. All rights reserved.
-          </p>
+        {/* Divider */}
+        <div className="border-t border-white/20 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+            <p className="text-white/80 text-center md:text-left">
+              © 2025 Cruisecaddy. All rights reserved.
+            </p>
+            
+            <div className="flex items-center space-x-6 text-sm">
+              <a href="#" className="text-white/80 hover:text-brand-mint transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-white/80 hover:text-brand-mint transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="text-white/80 hover:text-brand-mint transition-colors">
+                Cancellation Policy
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
