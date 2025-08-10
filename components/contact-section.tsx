@@ -106,12 +106,18 @@ export default function ContactSection() {
             </div>
             
             {/* Map overlay placeholder */}
-            <div className="absolute inset-0 bg-brand-teal/20 rounded-2xl flex items-center justify-center">
-              <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
-                <p className="text-brand-teal font-semibold">Interactive Map</p>
-                <p className="text-sm text-brand-teal/70">Click to view directions</p>
-              </div>
-            </div>
+            <a
+              href="https://maps.google.com/?q=Marina+Jack,+2+Marina+Plaza,+Sarasota,+FL+34236"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute inset-0 bg-brand-teal/20 rounded-2xl flex items-center justify-center"
+              aria-label="Open directions in Google Maps"
+            >
+              <span className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
+                <span className="text-brand-teal font-semibold block">Interactive Map</span>
+                <span className="text-sm text-brand-teal/70">Click to view directions</span>
+              </span>
+            </a>
 
             {/* Decorative elements */}
             <div className="absolute -top-4 -left-4 w-20 h-20 bg-white/20 rounded-full"></div>

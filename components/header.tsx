@@ -60,12 +60,12 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <a href="/" className="flex items-center space-x-2" aria-label="Cruisecaddy home">
             <Anchor className="h-8 w-8 text-brand-accent" />
             <span className="text-xl lg:text-2xl font-bold text-brand-teal">
               Cruisecaddy
             </span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
@@ -109,6 +109,7 @@ export default function Header() {
             className="lg:hidden p-2 text-brand-teal hover:text-brand-accent transition-colors"
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -121,6 +122,7 @@ export default function Header() {
           'lg:hidden absolute top-full left-0 right-0 bg-white shadow-lg transition-all duration-300',
           isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         )}
+        id="mobile-menu"
       >
         <div className="container mx-auto px-4 py-6 space-y-4 text-center">
           <a

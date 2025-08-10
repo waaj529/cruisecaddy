@@ -20,16 +20,20 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-brand-mint hover:text-brand-teal transition-colors"
                 aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-brand-mint hover:text-brand-teal transition-colors"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -117,13 +121,13 @@ export default function Footer() {
             </p>
             
             <div className="flex items-center space-x-6 text-sm">
-              <a href="#" className="text-white/80 hover:text-brand-mint transition-colors">
+              <a href="/privacy" className="text-white/80 hover:text-brand-mint transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-white/80 hover:text-brand-mint transition-colors">
+              <a href="/terms" className="text-white/80 hover:text-brand-mint transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-white/80 hover:text-brand-mint transition-colors">
+              <a href="/cancellation" className="text-white/80 hover:text-brand-mint transition-colors">
                 Cancellation Policy
               </a>
             </div>
