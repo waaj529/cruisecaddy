@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { Menu, X, Phone, Anchor } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -34,6 +35,7 @@ export default function Header() {
   const scrollToSection = (sectionId: string) => {
     const isHomePage = typeof window !== 'undefined' && window.location.pathname === '/';
     if (!isHomePage) {
+      // Hand off navigation to Next.js via anchor to ensure reliable cross-page routing
       window.location.href = `/#${sectionId}`;
       return;
     }
@@ -75,12 +77,12 @@ export default function Header() {
             >
               Home
             </a>
-            <button
-              onClick={() => scrollToSection('tours')}
+            <Link
+              href="/#tours"
               className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
             >
               Tours
-            </button>
+            </Link>
             <a
               href="/our-story"
               className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
@@ -131,12 +133,13 @@ export default function Header() {
           >
             Home
           </a>
-          <button
-            onClick={() => scrollToSection('tours')}
+          <Link
+            href="/#tours"
+            onClick={() => setIsMenuOpen(false)}
             className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
           >
             Tours
-          </button>
+          </Link>
           <a
             href="/our-story"
             className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"

@@ -60,7 +60,7 @@ export default function TourOptionsSection() {
   ];
 
   return (
-    <section id="tours" className="py-20 bg-white">
+    <section id="tours" className="py-20 bg-white scroll-mt-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-teal mb-4">
