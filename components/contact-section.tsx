@@ -43,7 +43,7 @@ export default function ContactSection() {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-brand-accent rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center flex-shrink-0">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -64,8 +64,8 @@ export default function ContactSection() {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="h-6 w-6 text-brand-teal" />
+                <div className="w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-brand-teal mb-2">
