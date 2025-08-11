@@ -89,6 +89,18 @@ export default function Header() {
             >
               Our Story
             </a>
+            <Link
+              href="/#booking"
+              className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
+            >
+              Book Now
+            </Link>
+            <Link
+              href="/#contact"
+              className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
+            >
+              Contact
+            </Link>
             <a
               href="tel:+19417777465"
               className="flex items-center space-x-2 text-brand-teal hover:text-brand-accent transition-colors"
@@ -146,6 +158,20 @@ export default function Header() {
           >
             Our Story
           </a>
+          <Link
+            href="/#booking"
+            onClick={() => setIsMenuOpen(false)}
+            className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
+          >
+            Book Now
+          </Link>
+          <Link
+            href="/#contact"
+            onClick={() => setIsMenuOpen(false)}
+            className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
+          >
+            Contact
+          </Link>
           <div className="pt-4">
             <Button onClick={handleBookTour} size="lg" className="w-full">
               Book a Tour
