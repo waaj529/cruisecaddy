@@ -2,7 +2,6 @@
 
 import { MapPin, Phone, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
 export default function ContactSection() {
   const handleBookTour = () => {
@@ -95,29 +94,15 @@ export default function ContactSection() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="https://images.pexels.com/photos/2747902/pexels-photo-2747902.jpeg"
-                alt="Marina Jack in Sarasota, Florida - departure location for Cruisecaddy tours"
-                fill
-                className="object-cover"
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                title="Map showing Marina Jack in Sarasota, Florida"
+                src="https://www.google.com/maps?q=Marina+Jack,+2+Marina+Plaza,+Sarasota,+FL+34236&output=embed"
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full border-0"
               />
             </div>
-            
-            {/* Map overlay placeholder */}
-            <a
-              href="https://maps.google.com/?q=Marina+Jack,+2+Marina+Plaza,+Sarasota,+FL+34236"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute inset-0 bg-brand-teal/20 rounded-2xl flex items-center justify-center"
-              aria-label="Open directions in Google Maps"
-            >
-              <span className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
-                <span className="text-brand-teal font-semibold block">Interactive Map</span>
-                <span className="text-sm text-brand-teal/70">Click to view directions</span>
-              </span>
-            </a>
 
             {/* Decorative elements */}
             <div className="absolute -top-4 -left-4 w-20 h-20 bg-white/20 rounded-full"></div>

@@ -3,32 +3,32 @@ import Image from 'next/image';
 export default function OurStoryGallery() {
   const galleryImages = [
     {
-      src: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg",
+      src: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600",
       alt: "Pink Cadillac boat cruising on Sarasota Bay",
       title: "Our Unique Pink Cadillac Boat"
     },
     {
-      src: "https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg",
+      src: "https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600",
       alt: "Beautiful sunset over Sarasota Bay",
       title: "Stunning Sarasota Bay Sunsets"
     },
     {
-      src: "https://images.pexels.com/photos/2747902/pexels-photo-2747902.jpeg",
+      src: "https://images.pexels.com/photos/2747902/pexels-photo-2747902.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600",
       alt: "Marina Jack departure location",
       title: "Marina Jack - Our Home Base"
     },
     {
-      src: "https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg",
+      src: "https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600",
       alt: "Classic car inspiration for our boat design",
       title: "Classic Cadillac Inspiration"
     },
     {
-      src: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg",
+      src: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600",
       alt: "Happy guests enjoying their cruise",
       title: "Creating Unforgettable Memories"
     },
     {
-      src: "https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg",
+      src: "https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600",
       alt: "Dolphin watching opportunities",
       title: "Wildlife Encounters"
     }

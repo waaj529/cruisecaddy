@@ -1,7 +1,6 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
 export default function HeroSection() {
   const handleBookTour = () => {
@@ -11,16 +10,6 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="relative min-h-screen bg-brand-light overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg"
-          alt="Beautiful Sarasota Bay water view"
-          fill
-          className="object-cover opacity-20"
-          priority
-        />
-      </div>
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-center">

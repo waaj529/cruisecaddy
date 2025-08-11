@@ -43,9 +43,9 @@ export default function AboutBoatSection() {
           </div>
           
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg"
+                src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600"
                 alt="Pink Cadillac boat cruising on Sarasota Bay"
                 fill
                 className="object-cover"

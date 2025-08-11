@@ -23,9 +23,9 @@ export default function OurStoryContent() {
           </div>
           
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg"
+                src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600"
                 alt="Classic pink Cadillac inspiration"
                 fill
                 className="object-cover"
@@ -38,9 +38,9 @@ export default function OurStoryContent() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative lg:order-1">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg"
+                src="https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600"
                 alt="Beautiful Sarasota Bay waters"
                 fill
                 className="object-cover"

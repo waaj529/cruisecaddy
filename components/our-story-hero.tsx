@@ -6,7 +6,7 @@ export default function OurStoryHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg"
+          src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=2400&h=1600"
           alt="Pink Cadillac boat on Sarasota Bay"
           fill
           className="object-cover opacity-30"
