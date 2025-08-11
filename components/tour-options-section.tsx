@@ -71,11 +71,11 @@ export default function TourOptionsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
           {tours.map((tour) => (
             <div
               key={tour.id}
-              className={`relative bg-white rounded-2xl shadow-lg border-2 transition-all duration-300 hover:shadow-2xl hover:border-brand-teal group ${
+              className={`relative bg-white rounded-2xl shadow-lg border-2 transition-all duration-300 hover:shadow-2xl hover:border-brand-teal group h-full flex flex-col ${
                 tour.popular ? 'border-brand-accent' : 'border-gray-200'
               }`}
             >
@@ -87,7 +87,7 @@ export default function TourOptionsSection() {
                 </div>
               )}
 
-              <div className="p-8">
+              <div className="p-8 flex flex-col h-full">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-brand-teal mb-2">{tour.title}</h3>
                   <div className="text-4xl font-bold text-brand-accent mb-2">
@@ -120,7 +120,7 @@ export default function TourOptionsSection() {
 
                 <Button 
                   onClick={handleBookTour}
-                  className="w-full group-hover:scale-105 transition-transform"
+                  className="w-full group-hover:scale-105 transition-transform mt-auto"
                   size="lg"
                 >
                   Book a Tour

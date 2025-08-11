@@ -89,12 +89,13 @@ export default function Header() {
             >
               Our Story
             </a>
-            <Link
-              href="/#contact"
+            <a
+              href="tel:+19417777465"
               className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
+              aria-label="Call (941) 777-7465"
             >
-              Contact
-            </Link>
+              (941) 777-7465
+            </a>
           </nav>
 
           {/* CTA Button - Desktop */}
@@ -145,13 +146,14 @@ export default function Header() {
           >
             Our Story
           </a>
-          <Link
-            href="/#contact"
+          <a
+            href="tel:+19417777465"
             onClick={() => setIsMenuOpen(false)}
             className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
+            aria-label="Call (941) 777-7465"
           >
-            Contact
-          </Link>
+            (941) 777-7465
+          </a>
           <div className="pt-4">
             <Button onClick={handleBookTour} size="lg" className="w-full">
               Book a Tour
