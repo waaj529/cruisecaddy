@@ -13,24 +13,39 @@ export default function Header() {
   const lastScrollYRef = useRef(0);
 
   useEffect(() => {
-    const controlNavbar = () => {
+    let ticking = false;
+    const DELTA_THRESHOLD = 8; // ignore tiny scrolls to prevent jitter
+    const SCROLLED_BG_OFFSET = 100;
+
+    const onScroll = () => {
       const currentScrollY = window.scrollY;
 
-      setIsScrolled(currentScrollY > 100);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(currentScrollY > SCROLLED_BG_OFFSET);
 
-      const lastScrollY = lastScrollYRef.current;
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
+          const delta = currentScrollY - lastScrollYRef.current;
+          const isAtTop = currentScrollY < 80;
+
+          if (isMenuOpen) {
+            setIsVisible(true);
+          } else if (isAtTop) {
+            setIsVisible(true);
+          } else if (Math.abs(delta) > DELTA_THRESHOLD) {
+            // Hide on scroll down, show on scroll up
+            setIsVisible(delta < 0);
+          }
+
+          lastScrollYRef.current = currentScrollY;
+          ticking = false;
+        });
+        ticking = true;
       }
-
-      lastScrollYRef.current = currentScrollY;
     };
 
-    window.addEventListener('scroll', controlNavbar, { passive: true });
-    return () => window.removeEventListener('scroll', controlNavbar);
-  }, []);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [isMenuOpen]);
 
   const scrollToSection = (sectionId: string) => {
     const isHomePage = typeof window !== 'undefined' && window.location.pathname === '/';
@@ -56,7 +71,7 @@ export default function Header() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent',
-        isVisible ? 'translate-y-0' : '-translate-y-full'
+        (isMenuOpen || isVisible) ? 'translate-y-0' : '-translate-y-full'
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
