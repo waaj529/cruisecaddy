@@ -90,12 +90,6 @@ export default function Header() {
               Our Story
             </a>
             <Link
-              href="/#booking"
-              className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
-            >
-              Book Now
-            </Link>
-            <Link
               href="/#contact"
               className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
             >
@@ -151,13 +145,6 @@ export default function Header() {
           >
             Our Story
           </a>
-          <Link
-            href="/#booking"
-            onClick={() => setIsMenuOpen(false)}
-            className="block w-full py-2 text-brand-teal hover:text-brand-accent transition-colors font-medium"
-          >
-            Book Now
-          </Link>
           <Link
             href="/#contact"
             onClick={() => setIsMenuOpen(false)}
