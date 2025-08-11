@@ -1,4 +1,4 @@
-import { Phone, Anchor, Mail, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
+import { Phone, Anchor, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (

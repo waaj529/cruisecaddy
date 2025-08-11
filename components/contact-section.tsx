@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 export default function ContactSection() {
   const handleBookTour = () => {
     // This would integrate with Setmore
-    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank');
+    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank', 'noopener,noreferrer');
   };
 
   return (
