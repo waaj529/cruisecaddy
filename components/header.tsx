@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { Menu, X, Phone, Anchor } from 'lucide-react';
+import { Menu, X, Anchor } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -70,7 +70,7 @@ export default function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center justify-center gap-8 flex-1">
             <a
               href="/"
               className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
@@ -101,13 +101,6 @@ export default function Header() {
             >
               Contact
             </Link>
-            <a
-              href="tel:+19417777465"
-              className="flex items-center space-x-2 text-brand-teal hover:text-brand-accent transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              <span className="font-medium">(941) 777-7465</span>
-            </a>
           </nav>
 
           {/* CTA Button - Desktop */}
@@ -177,13 +170,6 @@ export default function Header() {
               Book a Tour
             </Button>
           </div>
-          <a
-            href="tel:+19417777465"
-            className="flex items-center justify-center space-x-2 py-2 text-brand-teal hover:text-brand-accent transition-colors"
-          >
-            <Phone className="h-4 w-4" />
-            <span className="font-medium">(941) 777-7465</span>
-          </a>
         </div>
       </div>
     </header>
