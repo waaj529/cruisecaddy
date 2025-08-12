@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import image0703 from '@/public/images/DJI_0703.webp';
+import image2532 from '@/public/images/DSC_2532.webp';
 
 export default function OurStoryContent() {
   return (
@@ -25,11 +27,13 @@ export default function OurStoryContent() {
           <div className="relative">
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600"
+                src={image0703}
                 alt="Classic pink Cadillac inspiration"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
                 loading="lazy"
+                placeholder="blur"
               />
             </div>
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-brand-mint rounded-full opacity-60"></div>
@@ -40,11 +44,13 @@ export default function OurStoryContent() {
           <div className="relative lg:order-1">
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600&h=1600"
+                src={image2532}
                 alt="Beautiful Sarasota Bay waters"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
                 loading="lazy"
+                placeholder="blur"
               />
             </div>
             <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-brand-accent rounded-full opacity-40"></div>

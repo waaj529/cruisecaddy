@@ -2,9 +2,11 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { Menu, X, Anchor } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import CaddyCruiseLogo from '@/public/logo/fe526dba-80d5-460d-bff0-81b7583ba56c.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,11 +79,13 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-2" aria-label="Cruisecaddy home">
-            <Anchor className="h-8 w-8 text-brand-accent" />
-            <span className="text-xl lg:text-2xl font-bold text-brand-teal">
-              Cruisecaddy
-            </span>
+          <a href="/" className="flex items-center" aria-label="CaddyCruise home">
+            <Image
+              src={CaddyCruiseLogo}
+              alt="CaddyCruise.com logo"
+              priority
+              className="h-16 w-auto lg:h-20 scale-110 origin-left"
+            />
           </a>
 
           {/* Desktop Navigation */}

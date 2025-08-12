@@ -1,4 +1,6 @@
-import { Phone, Anchor, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
+import Image from 'next/image';
+import { Phone, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
+import CaddyCruiseLogo from '@/public/logo/fe526dba-80d5-460d-bff0-81b7583ba56c.png';
 
 export default function Footer() {
   return (
@@ -8,11 +10,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <Anchor className="h-10 w-10 text-brand-mint" />
-              <span className="text-3xl font-bold text-white">
-                Cruisecaddy
-              </span>
+            <div className="flex items-start mb-6">
+              <a href="/" aria-label="CaddyCruise home" className="inline-flex">
+                <Image
+                  src={CaddyCruiseLogo}
+                  alt="CaddyCruise.com logo"
+                  className="h-20 w-auto md:h-24"
+                />
+              </a>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-md">
               Experience Sarasota Bay like never before on our unique pink Cadillac boat. 
@@ -41,7 +46,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="self-start">
             <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li>
@@ -73,12 +78,12 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="self-start">
             <h3 className="text-xl font-semibold text-white mb-4">Contact Info</h3>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <Phone className="h-5 w-5 text-brand-mint mt-0.5 flex-shrink-0" />
-                <div>
+              <div className="flex items-start gap-4">
+                <Phone className="h-6 w-6 text-brand-mint mt-1 flex-shrink-0" />
+                <div className="pt-0.5">
                   <a
                     href="tel:+19417777465"
                     className="text-white hover:text-brand-mint transition-colors font-medium"
@@ -89,20 +94,19 @@ export default function Footer() {
                 </div>
               </div>
               
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-brand-mint mt-0.5 flex-shrink-0" />
-                <div>
+              <div className="flex items-start gap-4">
+                <MapPin className="h-6 w-6 text-brand-mint mt-1 flex-shrink-0" />
+                <div className="pt-0.5">
                   <p className="text-white/80">
-                    Marina Jack<br />
-                    2 Marina Plaza<br />
-                    Sarasota, FL 34236
+                    <span className="block font-medium">Marina Jack 2 Marina Plaza</span>
+                    <span className="block">Sarasota, FL 34236</span>
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3">
-                <Clock className="h-5 w-5 text-brand-mint mt-0.5 flex-shrink-0" />
-                <div>
+              <div className="flex items-start gap-4">
+                <Clock className="h-6 w-6 text-brand-mint mt-1 flex-shrink-0" />
+                <div className="pt-0.5">
                   <p className="text-white/80 text-sm">
                     Tours: 8 AM - 8 PM<br />
                     Booking: 8 AM - 6 PM
