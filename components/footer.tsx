@@ -10,16 +10,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-start mb-6">
-              <a href="/" aria-label="CaddyCruise home" className="inline-flex">
+            <div className="flex items-start mb-8">
+              <a href="/" aria-label="CaddyCruise home" className="inline-flex items-center">
                 <Image
                   src={CaddyCruiseLogo}
                   alt="CaddyCruise.com logo"
-                  className="h-20 w-auto md:h-24"
+                  className="h-24 w-auto md:h-28 lg:h-32 object-contain"
                 />
               </a>
             </div>
-            <p className="text-white/80 mb-6 leading-relaxed max-w-md">
+            <p className="text-white/80 mb-6 leading-relaxed max-w-xl">
               Experience Sarasota Bay like never before on our unique pink Cadillac boat. 
               BYOB friendly tours with unforgettable views and memories that last a lifetime.
             </p>
@@ -94,8 +94,8 @@ export default function Footer() {
                 </div>
               </div>
               
-              <div className="flex items-start gap-4">
-                <MapPin className="h-6 w-6 text-brand-mint mt-1 flex-shrink-0" />
+            <div className="flex items-baseline gap-4">
+              <MapPin className="h-6 w-6 text-brand-mint flex-shrink-0" />
                 <div className="pt-0.5">
                   <p className="text-white/80">
                     <span className="block font-medium">Marina Jack 2 Marina Plaza</span>
