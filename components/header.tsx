@@ -64,8 +64,12 @@ export default function Header() {
   };
 
   const handleBookTour = () => {
-    // This would integrate with Setmore
-    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank', 'noopener,noreferrer');
+    const el = document.getElementById('Setmore_button_iframe') as HTMLAnchorElement | null;
+    if (el) {
+      el.click();
+    } else {
+      window.open('https://caddycruise.setmore.com', '_blank', 'noopener,noreferrer');
+    }
   };
 
   return (
