@@ -96,25 +96,37 @@ export default function Header() {
           <nav className="hidden lg:flex items-center justify-center gap-8 flex-1">
             <a
               href="/"
-              className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
+              className={cn(
+                'transition-colors font-medium',
+                isScrolled ? 'text-brand-teal hover:text-brand-accent' : 'text-white hover:text-brand-accent'
+              )}
             >
               Home
             </a>
             <Link
               href="/#tours"
-              className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
+              className={cn(
+                'transition-colors font-medium',
+                isScrolled ? 'text-brand-teal hover:text-brand-accent' : 'text-white hover:text-brand-accent'
+              )}
             >
               Tours
             </Link>
             <a
               href="/our-story"
-              className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
+              className={cn(
+                'transition-colors font-medium',
+                isScrolled ? 'text-brand-teal hover:text-brand-accent' : 'text-white hover:text-brand-accent'
+              )}
             >
               Our Story
             </a>
             <a
               href="tel:+19417777465"
-              className="text-brand-teal hover:text-brand-accent transition-colors font-medium"
+              className={cn(
+                'transition-colors font-medium',
+                isScrolled ? 'text-brand-teal hover:text-brand-accent' : 'text-white hover:text-brand-accent'
+              )}
               aria-label="Call (941) 777-7465"
             >
               (941) 777-7465
@@ -131,7 +143,10 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 text-brand-teal hover:text-brand-accent transition-colors"
+            className={cn(
+              'lg:hidden p-2 transition-colors',
+              isScrolled ? 'text-brand-teal hover:text-brand-accent' : 'text-white hover:text-brand-accent'
+            )}
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
