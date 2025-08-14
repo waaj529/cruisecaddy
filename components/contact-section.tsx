@@ -61,7 +61,7 @@ export default function ContactSection() {
                     </a>
                   </p>
                   <p className="text-sm text-brand-teal/70">
-                    Available 7 days a week, 8 AM - 6 PM
+                    Available 7 days a week, 10 AM - 9 PM
                   </p>
                 </div>
               </div>
