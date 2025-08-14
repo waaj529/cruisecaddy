@@ -23,12 +23,12 @@ export default function TourOptionsSection() {
       capacity: 'Up to 6 People',
       description: 'Perfect timing for golden hour magic! Catch the sunrise or sunset on our beautiful pink Cadillac boat.',
       features: [
-        'Golden hour lighting',
-        'Peaceful morning or evening cruise',
-        'Perfect for photography',
-        'BYOB welcome',
-        'Professional captain',
-        'Safety equipment included'
+        'USCG-certified captain',
+        'Cooler with ice',
+        'Bluetooth speaker',
+        'Karaoke machine',
+        'Floating trampoline',
+        'Unforgettable vibes'
       ],
       popular: false
     },
@@ -40,12 +40,12 @@ export default function TourOptionsSection() {
       capacity: 'Up to 6 People',
       description: 'Perfect for a quick escape! Cruise the beautiful Sarasota Bay, see dolphins, and enjoy stunning views.',
       features: [
-        'Dolphin watching opportunities',
-        'Scenic bay tour',
-        'BYOB welcome',
-        'Professional captain',
-        'Safety equipment included'
-      ],
+         'USCG-certified captain',
+        'Cooler with ice',
+        'Bluetooth speaker',
+        'Karaoke machine',
+        'Floating trampoline',
+        'Unforgettable vibes'
       popular: true
     },
     {
@@ -56,11 +56,12 @@ export default function TourOptionsSection() {
       capacity: 'Up to 6 People',
       description: 'Our signature experience! Extended cruise with multiple stops, wildlife viewing, and more time to relax.',
       features: [
-        'Extended wildlife viewing',
-        'Multiple scenic stops',
-        'Swimming opportunities',
-        'BYOB welcome',
-        'Cooler and ice provided',
+         'USCG-certified captain',
+        'Cooler with ice',
+        'Bluetooth speaker',
+        'Karaoke machine',
+        'Floating trampoline',
+        'Unforgettable vibes'
       ],
       popular: false
     }
