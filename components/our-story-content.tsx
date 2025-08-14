@@ -56,15 +56,10 @@ export default function OurStoryContent() {
               Our Mission
             </h2>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
-              We believe that every moment on the water should be special. That&rsquo;s why we&rsquo;ve 
-              created more than just a boat tour – we&rsquo;ve crafted an experience that brings 
-              people together, creates lasting memories, and showcases the natural beauty 
-              of Sarasota Bay.
+              We believe that every moment on the water should be special. That’s why we’ve created more than just a boat tour—we’ve crafted an experience that brings people together, creates lasting memories, and showcases the natural beauty of Sarasota Bay starting from Nora Patterson Bay Island Park.
             </p>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
-              Our BYOB-friendly approach means you can truly make the experience your own, 
-              while our experienced captains ensure your safety and share their knowledge 
-              of the local waters, wildlife, and hidden gems that make Sarasota special.
+              Our BYOB-friendly approach means you can truly make the experience your own, while our experienced captains ensure your safety and share their knowledge of the local waters, wildlife, and hidden gems that make Sarasota unique.
             </p>
           </div>
         </div>
