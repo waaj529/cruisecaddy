@@ -46,6 +46,7 @@ export default function TourOptionsSection() {
         'Karaoke machine',
         'Floating trampoline',
         'Unforgettable vibes'
+      ],
       popular: true
     },
     {
