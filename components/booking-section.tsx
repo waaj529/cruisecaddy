@@ -110,35 +110,6 @@ export default function BookingSection() {
             <p className="text-brand-teal/80 mb-4">
               Click below to see available times and secure your spot on our pink Cadillac boat!
             </p>
-            {serviceOptions.length > 0 && (
-              <div className="flex flex-wrap items-center justify-center gap-2 mb-3">
-                {serviceOptions.map((s) => (
-                  <Button
-                    key={s.key}
-                    variant={activeUrl === s.url ? 'default' : 'secondary'}
-                    onClick={() => setActiveUrl(s.url!)}
-                    className="text-sm"
-                  >
-                    {s.label}
-                  </Button>
-                ))}
-              </div>
-            )}
-            
-            {/* Setmore calendar embedded inline */}
-            <div className="bg-white rounded-lg p-2 sm:p-3 mb-4 border-2 border-dashed border-brand-mint">
-              <div id="setmore-embed" className="w-full overflow-hidden rounded-md">
-                <iframe
-                  src={activeUrl}
-                  title="Setmore Booking Calendar"
-                  className="w-full border-0"
-                  style={{ height: 'clamp(480px, 60vh, 700px)' }}
-                  loading="lazy"
-                  allow="payment; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
-              </div>
-            </div>
 
             <Button onClick={handleBookTour} size="lg" className="mb-3">
               Book a Tour
