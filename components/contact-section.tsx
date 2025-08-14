@@ -38,9 +38,9 @@ export default function ContactSection() {
                     Departure Location
                   </h3>
                   <p className="text-brand-teal/80">
-                    Marina Jack<br />
-                    2 Marina Plaza<br />
-                    Sarasota, FL 34236
+                    Nora Patterson<br />
+                    946 Siesta Dr<br />
+                    Sarasota, FL 34242
                   </p>
                 </div>
               </div>
