@@ -109,8 +109,8 @@ export default function Footer() {
               <MapPin className="h-6 w-6 text-brand-mint flex-shrink-0" />
                 <div className="pt-0.5">
                   <p className="text-white/80">
-                    <span className="block font-medium">Marina Jack 2 Marina Plaza</span>
-                    <span className="block">Sarasota, FL 34236</span>
+                    <span className="block font-medium">Nora Patterson Bay Island Park</span>
+                    <span className="block">Sarasota, FL 34242</span>
                   </p>
                 </div>
               </div>
