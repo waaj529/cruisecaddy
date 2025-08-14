@@ -9,6 +9,9 @@ const PrivacyPolicyDialog = dynamic(() => import('@/components/privacy-policy-di
 const TermsOfServiceDialog = dynamic(() => import('@/components/terms-of-service-dialog'), {
   ssr: false
 });
+const CancellationPolicyDialog = dynamic(() => import('@/components/cancellation-policy-dialog'), {
+  ssr: false
+});
 
 export default function Footer() {
   return (
@@ -154,9 +157,11 @@ export default function Footer() {
                   Terms of Service
                 </button>
               </TermsOfServiceDialog>
-              <a href="/cancellation" className="text-white/80 hover:text-brand-mint transition-colors">
-                Cancellation Policy
-              </a>
+              <CancellationPolicyDialog>
+                <button className="text-white/80 hover:text-brand-mint transition-colors">
+                  Cancellation Policy
+                </button>
+              </CancellationPolicyDialog>
             </div>
           </div>
         </div>
