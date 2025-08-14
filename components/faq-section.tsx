@@ -36,8 +36,8 @@ export default function FAQSection() {
       answer: 'You may cancel up to 30+ days in advance for a full refund. If we cancel due to unsafe weather, you\'ll receive a full refund or the option to reschedule.'
     },
     {
-      question: 'Where do the tours start and end?',
-      answer: 'All tours depart from Marina Jack located at 2 Marina Plaza, Sarasota, FL 34236. We recommend arriving 15 minutes early for check-in. Detailed parking and meeting instructions will be provided with your booking confirmation.'
+      question: 'How do I pay, and when?',
+      answer: 'We accept credit cards via stripe, 4% convenience fee may apply at checkout. Payment is typically due at the time of booking unless otherwise arranged.'
     },
     {
       question: 'Are there restrooms on board?',
