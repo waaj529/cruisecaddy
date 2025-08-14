@@ -34,7 +34,7 @@ export default function RootLayout({
           src="https://assets.setmore.com/integration/static/setmoreIframeLive.js"
           strategy="afterInteractive"
         />
-        {/* Hidden Setmore anchor to trigger in-page booking popup */}
+        {/* Hidden Setmore anchor to trigger in-page booking popup; href will be overwritten per service */}
         <a
           id="Setmore_button_iframe"
           href="https://caddycruise.setmore.com"
