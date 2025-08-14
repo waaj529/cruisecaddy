@@ -17,7 +17,7 @@ export default function TourOptionsSection() {
   const tours = [
     {
       id: 'early-sunset',
-      title: 'Early Riser or Sunset',
+      title: 'Rise or Rest Tour',
       price: '$300',
       duration: '1.5 Hours',
       capacity: 'Up to 6 People',
