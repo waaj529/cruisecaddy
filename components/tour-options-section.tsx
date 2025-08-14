@@ -145,7 +145,7 @@ export default function TourOptionsSection() {
           </p>
           <div className="flex items-center justify-center text-brand-teal">
             <MapPin className="h-5 w-5 mr-2 text-brand-mint" />
-            <span>Marina Jack, 2 Marina Plaza, Sarasota, FL 34236</span>
+            <span>946 Siesta Dr, Sarasota, FL 34242</span>
           </div>
         </div>
       </div>
