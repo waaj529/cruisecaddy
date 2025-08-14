@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Phone, MapPin, Clock, Facebook, Instagram, Music } from 'lucide-react';
+import { Phone, MapPin, Clock, Facebook, Instagram } from 'lucide-react';
 import CaddyCruiseLogo from '@/public/logo/fe526dba-80d5-460d-bff0-81b7583ba56c.png';
 
 export default function Footer() {
@@ -41,15 +41,6 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.tiktok.com/"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-brand-mint hover:text-brand-teal transition-colors"
-                aria-label="TikTok"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Music className="h-5 w-5" />
               </a>
             </div>
           </div>
