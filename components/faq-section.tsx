@@ -28,12 +28,12 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: 'What should I bring on the tour?',
-      answer: 'Bring your favorite beverages (BYOB friendly!), sunscreen, sunglasses, and a camera. We provide coolers, ice, water, and all safety equipment. Don\'t forget comfortable clothing and non-slip shoes.'
+      question: 'Do I need to book in advance?',
+      answer: 'Yes—it’s highly recommended to reserve your spot ahead of time. Walk-in availability is not guaranteed.'
     },
     {
-      question: 'Is the boat kid-friendly and family safe?',
-      answer: 'Absolutely! Our pink Cadillac boat is perfect for families. We have all required safety equipment including life jackets for children. Our experienced captains prioritize safety while ensuring everyone has a great time.'
+      question: ' What is the cancellation and weather policy',
+      answer: 'You may cancel up to 30+ days in advance for a full refund. If we cancel due to unsafe weather, you'll receive a full refund or the option to reschedule.'
     },
     {
       question: 'Where do the tours start and end?',
