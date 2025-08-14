@@ -28,19 +28,21 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        {/* Setmore booking widget trigger and script */}
-        <a
-          id="Setmore_button_iframe"
-          href="https://caddycruise.setmore.com"
-          style={{ display: 'none' }}
-          aria-hidden="true"
-          tabIndex={-1}
-        />
+        {/* Setmore booking widget script (anchor rendered where needed) */}
         <Script
           id="setmore_script"
           src="https://assets.setmore.com/integration/static/setmoreIframeLive.js"
           strategy="afterInteractive"
         />
+        {/* Hidden Setmore anchor to trigger in-page booking popup */}
+        <a
+          id="Setmore_button_iframe"
+          href="https://caddycruise.setmore.com"
+          style={{ display: 'none' }}
+          aria-hidden="true"
+        >
+          Book with Setmore
+        </a>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded"

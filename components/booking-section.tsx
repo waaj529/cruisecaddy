@@ -4,12 +4,14 @@ import { Button } from '@/components/ui/button';
 import { Calendar, Clock, Wine } from 'lucide-react';
 
 export default function BookingSection() {
+  const setmoreUrl =
+    process.env.NEXT_PUBLIC_SETMORE_CALENDAR_URL || 'https://caddycruise.setmore.com/chad';
   const handleBookTour = () => {
-    const el = document.getElementById('Setmore_button_iframe') as HTMLAnchorElement | null;
-    if (el) {
-      el.click();
+    const embed = document.getElementById('setmore-embed');
+    if (embed) {
+      embed.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
-      window.open('https://caddycruise.setmore.com', '_blank', 'noopener,noreferrer');
+      window.location.hash = 'booking';
     }
   };
 
@@ -77,14 +79,19 @@ export default function BookingSection() {
               Click below to see available times and secure your spot on our pink Cadillac boat!
             </p>
             
-            {/* This would be replaced with actual Setmore booking widget */}
-            <div className="bg-white rounded-lg p-6 mb-6 border-2 border-dashed border-brand-mint">
-              <p className="text-brand-teal/60 mb-4">
-                🗓️ Setmore Booking Widget Will Appear Here
-              </p>
-              <p className="text-sm text-brand-teal/50">
-                Real-time availability • Instant confirmation • Secure payment
-              </p>
+            {/* Setmore calendar embedded inline */}
+            <div className="bg-white rounded-lg p-2 sm:p-4 mb-6 border-2 border-dashed border-brand-mint">
+              <div id="setmore-embed" className="w-full overflow-hidden rounded-md">
+                <iframe
+                  src={setmoreUrl}
+                  title="Setmore Booking Calendar"
+                  className="w-full border-0"
+                  style={{ height: '900px' }}
+                  loading="lazy"
+                  allow="payment; web-share"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
 
             <Button onClick={handleBookTour} size="lg" className="mb-4">

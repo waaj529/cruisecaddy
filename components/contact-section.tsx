@@ -9,7 +9,8 @@ export default function ContactSection() {
     if (el) {
       el.click();
     } else {
-      window.open('https://caddycruise.setmore.com', '_blank', 'noopener,noreferrer');
+      // Fallback: navigate to in-page booking section instead of opening a new tab
+      window.location.href = '/#booking';
     }
   };
 
