@@ -203,7 +203,7 @@ export default function ReviewsSection() {
                 <Star key={i} className="h-5 w-5 fill-current" />
               ))}
             </div>
-            <span className="text-brand-teal font-semibold ml-2">4.9/5 Average Rating</span>
+            <span className="text-brand-teal font-semibold ml-2">5.0/5 Average Rating</span>
           </div>
         </div>
       </div>
