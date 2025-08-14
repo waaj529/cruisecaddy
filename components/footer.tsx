@@ -31,7 +31,7 @@ export default function Footer() {
               </a>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-xl">
-              Experience Sarasota Bay like never before on our unique pink Cadillac boat. 
+              Experience Sarasota Bay like never before on our unique pink Cadillac boat.
               BYOB friendly tours with unforgettable views and memories that last a lifetime.
             </p>
             <div className="flex space-x-4">
@@ -143,7 +143,7 @@ export default function Footer() {
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-white/80 text-center md:text-left">
-              © 2025 Cruise Caddy. All rights reserved. Developed by LusterPix® Media
+              © 2025 Caddy Cruise. All rights reserved. Developed by LusterPix® Media
             </p>
             
             <div className="flex items-center space-x-6 text-sm">

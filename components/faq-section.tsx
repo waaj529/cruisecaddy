@@ -61,7 +61,7 @@ export default function FAQSection() {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-brand-teal/80 max-w-2xl mx-auto">
-            Everything you need to know for your perfect Cruisecaddy experience.
+            Everything you need to know for your perfect Caddy Cruise experience.
           </p>
         </div>
 

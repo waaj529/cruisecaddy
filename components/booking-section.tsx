@@ -78,7 +78,7 @@ export default function BookingSection() {
             How to Book Your Adventure
           </h2>
           <p className="text-xl text-brand-teal/80 max-w-2xl mx-auto">
-            Getting on board is as easy as 1-2-3. Start your Cruisecaddy experience today!
+            Getting on board is as easy as 1-2-3. Start your Caddy Cruise experience today!
           </p>
         </div>
 
