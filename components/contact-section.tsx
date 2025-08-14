@@ -77,9 +77,9 @@ export default function ContactSection() {
                     Tour Schedule
                   </h3>
                   <div className="text-brand-teal/80 space-y-1">
-                    <p>Morning Tours: 9:00 AM & 10:30 AM</p>
-                    <p>Afternoon Tours: 1:00 PM & 3:00 PM</p>
-                    <p>Sunset Tours: 5:30 PM & 7:00 PM</p>
+                    <p>Morning Tours: 10:00 AM & 11:30 AM</p>
+                    <p>Afternoon Tours: 1:30 PM & 5:30 PM</p>
+                    <p>Sunset Tours: 6:00 PM & 9:00 PM</p>
                   </div>
                 </div>
               </div>
