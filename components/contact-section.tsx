@@ -22,7 +22,7 @@ export default function ContactSection() {
             Find Us in Beautiful Sarasota
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            We&rsquo;re conveniently located at Marina Jack in downtown Sarasota, making it easy to start your pink Cadillac boat adventure.
+            We&rsquo;re conveniently located at Nora Patterson Bay Island Park, making it easy to start your pink Cadillac boat adventure.
           </p>
         </div>
 
