@@ -2,18 +2,6 @@ import Image from 'next/image';
 import { Phone, MapPin, Clock, Facebook, Instagram, Music } from 'lucide-react';
 import CaddyCruiseLogo from '@/public/logo/fe526dba-80d5-460d-bff0-81b7583ba56c.png';
 
-// TikTok Icon Component
-const TikTokIcon = ({ className }: { className?: string }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M9 12a4 4 0 1 0 4 4V8a5 5 0 0 0 5-5H15a5 5 0 0 1-5 5v4z"/>
-  </svg>
-);
-
 export default function Footer() {
   return (
     <footer className="bg-brand-teal py-16">
@@ -61,7 +49,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <TikTokIcon className="h-5 w-5" />
+                <Music className="h-5 w-5" />
               </a>
             </div>
           </div>
