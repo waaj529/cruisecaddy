@@ -1,7 +1,11 @@
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { Phone, MapPin, Clock, Facebook, Instagram, Music } from 'lucide-react';
 import CaddyCruiseLogo from '@/public/logo/fe526dba-80d5-460d-bff0-81b7583ba56c.png';
-import PrivacyPolicyDialog from '@/components/privacy-policy-dialog';
+
+const PrivacyPolicyDialog = dynamic(() => import('@/components/privacy-policy-dialog'), {
+  ssr: false
+});
 
 export default function Footer() {
   return (
