@@ -6,6 +6,9 @@ import CaddyCruiseLogo from '@/public/logo/fe526dba-80d5-460d-bff0-81b7583ba56c.
 const PrivacyPolicyDialog = dynamic(() => import('@/components/privacy-policy-dialog'), {
   ssr: false
 });
+const TermsOfServiceDialog = dynamic(() => import('@/components/terms-of-service-dialog'), {
+  ssr: false
+});
 
 export default function Footer() {
   return (
@@ -146,9 +149,11 @@ export default function Footer() {
                   Privacy Policy
                 </button>
               </PrivacyPolicyDialog>
-              <a href="/terms" className="text-white/80 hover:text-brand-mint transition-colors">
-                Terms of Service
-              </a>
+              <TermsOfServiceDialog>
+                <button className="text-white/80 hover:text-brand-mint transition-colors">
+                  Terms of Service
+                </button>
+              </TermsOfServiceDialog>
               <a href="/cancellation" className="text-white/80 hover:text-brand-mint transition-colors">
                 Cancellation Policy
               </a>
