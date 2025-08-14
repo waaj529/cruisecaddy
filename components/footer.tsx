@@ -132,7 +132,7 @@ export default function Footer() {
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-white/80 text-center md:text-left">
-              © 2025 Cruise Caddy. All rights reserved.                          Created by LusterPix® Media
+              © 2025 Cruise Caddy. All rights reserved.                                       Created by LusterPix® Media
             </p>
             
             <div className="flex items-center space-x-6 text-sm">
