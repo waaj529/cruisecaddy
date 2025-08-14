@@ -2,12 +2,16 @@
 
 import { MapPin, Phone, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 
 export default function ContactSection() {
   const handleBookTour = () => {
-    // This would integrate with Setmore
-    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank');
+    const el = document.getElementById('Setmore_button_iframe') as HTMLAnchorElement | null;
+    if (el) {
+      el.click();
+    } else {
+      // Fallback: navigate to in-page booking section instead of opening a new tab
+      window.location.href = '/#booking';
+    }
   };
 
   return (
@@ -18,7 +22,7 @@ export default function ContactSection() {
             Find Us in Beautiful Sarasota
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            We're conveniently located at Marina Jack in downtown Sarasota, making it easy to start your pink Cadillac boat adventure.
+            We&rsquo;re conveniently located at Marina Jack in downtown Sarasota, making it easy to start your pink Cadillac boat adventure.
           </p>
         </div>
 
@@ -44,7 +48,7 @@ export default function ContactSection() {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-brand-accent rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center flex-shrink-0">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -52,7 +56,7 @@ export default function ContactSection() {
                     Contact Information
                   </h3>
                   <p className="text-brand-teal/80 mb-2">
-                    <a href="tel:+1234567890" className="hover:text-brand-accent transition-colors">
+                    <a href="tel:+19417777465" className="hover:text-brand-accent transition-colors">
                       (941) 777-7465
                     </a>
                   </p>
@@ -65,8 +69,8 @@ export default function ContactSection() {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="h-6 w-6 text-brand-teal" />
+                <div className="w-12 h-12 bg-brand-teal rounded-full flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-brand-teal mb-2">
@@ -86,7 +90,7 @@ export default function ContactSection() {
                 Book a Tour
               </Button>
               <a
-                href="tel:+1234567890"
+                href="tel:+19417777465"
                 className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-white text-brand-teal border-2 border-brand-teal rounded-lg hover:bg-brand-teal hover:text-white transition-colors font-medium"
               >
                 Call Now
@@ -95,22 +99,14 @@ export default function ContactSection() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="https://images.pexels.com/photos/2747902/pexels-photo-2747902.jpeg"
-                alt="Marina Jack in Sarasota, Florida - departure location for Cruisecaddy tours"
-                fill
-                className="object-cover"
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                title="Map showing Marina Jack in Sarasota, Florida"
+                src="https://www.google.com/maps?q=Marina+Jack,+2+Marina+Plaza,+Sarasota,+FL+34236&output=embed"
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full border-0"
               />
-            </div>
-            
-            {/* Map overlay placeholder */}
-            <div className="absolute inset-0 bg-brand-teal/20 rounded-2xl flex items-center justify-center">
-              <div className="bg-white/90 backdrop-blur-sm rounded-lg p-4 text-center">
-                <p className="text-brand-teal font-semibold">Interactive Map</p>
-                <p className="text-sm text-brand-teal/70">Click to view directions</p>
-              </div>
             </div>
 
             {/* Decorative elements */}

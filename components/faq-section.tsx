@@ -9,8 +9,13 @@ export default function FAQSection() {
   const [openItems, setOpenItems] = useState<number[]>([]);
 
   const handleBookTour = () => {
-    // This would integrate with Setmore
-    window.open('https://my.setmore.com/bookingpage/your-setmore-id', '_blank');
+    const el = document.getElementById('Setmore_button_iframe') as HTMLAnchorElement | null;
+    if (el) {
+      el.click();
+    } else {
+      // Fallback: navigate to in-page booking section instead of opening a new tab
+      window.location.href = '/#booking';
+    }
   };
 
   const toggleItem = (index: number) => {
@@ -99,13 +104,13 @@ export default function FAQSection() {
 
         <div className="text-center mt-16">
           <p className="text-brand-teal mb-6 text-lg">
-            Still have questions? We're here to help!
+            Still have questions? We&rsquo;re here to help!
           </p>
           <Button onClick={handleBookTour} size="lg" className="mr-4 mb-4">
             Book a Tour
           </Button>
           <a
-            href="tel:+1234567890"
+            href="tel:+19417777465"
             className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-brand-teal text-brand-teal rounded-lg hover:bg-brand-teal hover:text-white transition-colors font-medium"
           >
             Call (941) 777-7465

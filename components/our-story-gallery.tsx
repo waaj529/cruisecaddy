@@ -1,36 +1,42 @@
 import Image from 'next/image';
+import img0711 from '@/public/images/DJI_0711.webp';
+import img2646 from '@/public/images/DSC_2646.webp';
+import img0745 from '@/public/images/DJI_0745-1.webp';
+import img2572 from '@/public/images/DSC_2572.webp';
+import img0676 from '@/public/images/DJI_0676.webp';
+import img0764 from '@/public/images/DJI_0764.webp';
 
 export default function OurStoryGallery() {
   const galleryImages = [
     {
-      src: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg",
+      src: img0711,
       alt: "Pink Cadillac boat cruising on Sarasota Bay",
-      title: "Our Unique Pink Cadillac Boat"
+      title: "Aerial View of Our Pink Cadillac Boat"
     },
     {
-      src: "https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg",
+      src: img2646,
       alt: "Beautiful sunset over Sarasota Bay",
-      title: "Stunning Sarasota Bay Sunsets"
+      title: "Iconic Pink Cadillac Style"
     },
     {
-      src: "https://images.pexels.com/photos/2747902/pexels-photo-2747902.jpeg",
+      src: img0745,
       alt: "Marina Jack departure location",
-      title: "Marina Jack - Our Home Base"
+      title: "Sandbar Chill on the Sunchill"
     },
     {
-      src: "https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg",
+      src: img2572,
       alt: "Classic car inspiration for our boat design",
-      title: "Classic Cadillac Inspiration"
+      title: "BYOB Aboard the Pink Cadillac"
     },
     {
-      src: "https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg",
+      src: img0676,
       alt: "Happy guests enjoying their cruise",
-      title: "Creating Unforgettable Memories"
+      title: "Sandbar Adventures"
     },
     {
-      src: "https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg",
+      src: img0764,
       alt: "Dolphin watching opportunities",
-      title: "Wildlife Encounters"
+      title: "Cruising Sarasota Bay"
     }
   ];
 
@@ -56,6 +62,7 @@ export default function OurStoryGallery() {
                 src={image.src}
                 alt={image.alt}
                 fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />

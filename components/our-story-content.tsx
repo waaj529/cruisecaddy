@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import image0703 from '@/public/images/DJI_0703.webp';
+import image2532 from '@/public/images/DSC_2532.webp';
 
 export default function OurStoryContent() {
   return (
@@ -16,20 +18,22 @@ export default function OurStoryContent() {
             </p>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
               After years of planning and custom design work, the pink Cadillac boat was born. 
-              This isn't just any boat – it's a carefully crafted vessel that captures the 
+              This isn&rsquo;t just any boat – it&rsquo;s a carefully crafted vessel that captures the 
               elegance and style of a classic Cadillac while providing all the safety and 
               comfort needed for the perfect bay cruise.
             </p>
           </div>
           
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg"
+                src={image0703}
                 alt="Classic pink Cadillac inspiration"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
                 loading="lazy"
+                placeholder="blur"
               />
             </div>
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-brand-mint rounded-full opacity-60"></div>
@@ -38,13 +42,15 @@ export default function OurStoryContent() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative lg:order-1">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.pexels.com/photos/2422609/pexels-photo-2422609.jpeg"
+                src={image2532}
                 alt="Beautiful Sarasota Bay waters"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
                 loading="lazy"
+                placeholder="blur"
               />
             </div>
             <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-brand-accent rounded-full opacity-40"></div>
@@ -55,8 +61,8 @@ export default function OurStoryContent() {
               Our Mission
             </h2>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
-              We believe that every moment on the water should be special. That's why we've 
-              created more than just a boat tour – we've crafted an experience that brings 
+              We believe that every moment on the water should be special. That&rsquo;s why we&rsquo;ve 
+              created more than just a boat tour – we&rsquo;ve crafted an experience that brings 
               people together, creates lasting memories, and showcases the natural beauty 
               of Sarasota Bay.
             </p>

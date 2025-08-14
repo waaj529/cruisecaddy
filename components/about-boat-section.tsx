@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import boatImage from '@/public/images/DJI_0754.webp';
 
 export default function AboutBoatSection() {
   return (
@@ -10,7 +11,7 @@ export default function AboutBoatSection() {
               Meet Our Pink Cadillac Boat
             </h2>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
-              Our one-of-a-kind pink Cadillac boat isn't just a vessel – it's an experience! 
+              Our one-of-a-kind pink Cadillac boat isn&rsquo;t just a vessel – it&rsquo;s an experience! 
               Designed to turn heads and create memories, this unique boat combines classic 
               Cadillac style with modern comfort and safety.
             </p>
@@ -43,13 +44,15 @@ export default function AboutBoatSection() {
           </div>
           
           <div className="relative">
-            <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg"
+                src={boatImage}
                 alt="Pink Cadillac boat cruising on Sarasota Bay"
                 fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 className="object-cover"
                 loading="lazy"
+                placeholder="blur"
               />
             </div>
             {/* Decorative elements */}

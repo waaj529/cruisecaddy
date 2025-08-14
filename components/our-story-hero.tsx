@@ -6,9 +6,10 @@ export default function OurStoryHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg"
+          src="/images/DSC_2616.webp"
           alt="Pink Cadillac boat on Sarasota Bay"
           fill
+          sizes="100vw"
           className="object-cover opacity-30"
           priority
         />
@@ -21,7 +22,7 @@ export default function OurStoryHero() {
             Our Story
           </h1>
           <p className="text-xl md:text-2xl text-brand-teal/80 max-w-2xl mx-auto">
-            The journey behind Sarasota's most unique boat tour experience
+            The journey behind Sarasota&rsquo;s most unique boat tour experience
           </p>
         </div>
       </div>

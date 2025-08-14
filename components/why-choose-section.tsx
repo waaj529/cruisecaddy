@@ -32,7 +32,7 @@ export default function WhyChooseSection() {
             Why Choose Cruisecaddy?
           </h2>
           <p className="text-xl text-brand-teal/80 max-w-2xl mx-auto">
-            We're not just another boat tour. We're your ticket to a one-of-a-kind Sarasota experience.
+            We&rsquo;re not just another boat tour. We&rsquo;re your ticket to a one-of-a-kind Sarasota experience.
           </p>
         </div>
 

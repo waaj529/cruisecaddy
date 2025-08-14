@@ -1,11 +1,27 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function ReviewsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const reviewsPerPage = 4;
+  const gridRef = useRef<HTMLDivElement | null>(null);
+  const [cardFixedHeight, setCardFixedHeight] = useState<number | undefined>(undefined);
+
+  // Lock review card height to the first slider's tallest card so all pages match dimensions
+  useEffect(() => {
+    const container = gridRef.current;
+    if (!container) return;
+    const cardElements = Array.from(
+      container.querySelectorAll('[data-review-card]')
+    ) as HTMLElement[];
+    if (cardElements.length === 0) return;
+    const maxHeight = Math.max(
+      ...cardElements.map((el) => el.getBoundingClientRect().height)
+    );
+    setCardFixedHeight(Math.ceil(maxHeight));
+  }, []);
 
   const reviews = [
     {
@@ -13,7 +29,7 @@ export default function ReviewsSection() {
       name: 'Sarah M.',
       location: 'Tampa, FL',
       rating: 5,
-      text: "Absolutely amazing experience! The pink Cadillac boat was so unique and fun. Captain was knowledgeable and friendly. BYOB was perfect for our group celebration. Highly recommend!",
+      text: "Couples Cruise to Remember My partner and I took an evening cruise with Captain Jo, and it honestly felt like a scene from a movie. The boat is charming and just quirky enough to be romantic. We toasted champagne under the stars and didn’t want it to end.",
       date: '2 weeks ago'
     },
     {
@@ -21,7 +37,7 @@ export default function ReviewsSection() {
       name: 'Mike & Jessica R.',
       location: 'Orlando, FL',
       rating: 5,
-      text: "Perfect date night activity! The sunset cruise was breathtaking and we saw dolphins. The boat is Instagram gold - got so many amazing photos. Will definitely be back!",
+      text: "Music, Dancing & Sunset Views The vibe was perfect—good tunes, warm breeze, and the best view of the sunset. Captain Marcus knew all the best photo spots and let us hook up our playlist to the boat’s speaker system. Felt like our own little party on the water.",
       date: '1 month ago'
     },
     {
@@ -29,7 +45,7 @@ export default function ReviewsSection() {
       name: 'The Johnson Family',
       location: 'Sarasota, FL',
       rating: 5,
-      text: "Great family fun! Kids loved the unique boat design and spotting dolphins. Captain made sure everyone felt safe and had a great time. Local treasure for sure!",
+      text: "Sandbar Fun with Friends We booked a private Pink Caddy Cruise to the sandbar with six of our closest friends. Captain Layla was so friendly and fun. She brought beach games and even helped us take group photos. This was hands-down the best beach day we’ve had in years.",
       date: '3 weeks ago'
     },
     {
@@ -37,7 +53,7 @@ export default function ReviewsSection() {
       name: 'David L.',
       location: 'Naples, FL',
       rating: 5,
-      text: "Bachelor party perfection! The 4-hour tour was exactly what we needed. BYOB policy was great, boat was comfortable, and the views were incredible. Thanks for the memories!",
+      text: "Chill Day, No Crowds My wife and I booked a midday cruise with Captain Eli, and it was everything we needed. Quiet, peaceful, and not crowded at all. Floating on the water with a cold drink and great conversation—it was the highlight of our trip to Sarasota.",
       date: '1 week ago'
     },
     {
@@ -45,7 +61,7 @@ export default function ReviewsSection() {
       name: 'Amanda K.',
       location: 'St. Petersburg, FL',
       rating: 5,
-      text: "What an incredible experience! The pink Cadillac boat is absolutely stunning and so photogenic. Our captain was fantastic and showed us all the best spots. Can't wait to book again!",
+      text: "Birthday Bash on the Water We surprised my sister with a Pink Caddy Cruise for her birthday, and it was a total hit! Captain Sierra made the whole ride feel like a VIP celebration. We had music, drinks, and gorgeous views—what more could you want? This will definitely become a birthday tradition.",
       date: '4 days ago'
     },
     {
@@ -53,7 +69,7 @@ export default function ReviewsSection() {
       name: 'Robert & Linda T.',
       location: 'Bradenton, FL',
       rating: 5,
-      text: "Celebrating our anniversary on this unique boat was perfect! The sunset views were magical, and being able to bring our own champagne made it extra special. Highly recommend for couples!",
+      text: "First Time, Won’t Be the Last! It was our first time on a Pink Caddy Cruise boat, and we were blown away. Floating on clear water with a drink in hand, good company, and a great captain—Leo—it just doesn’t get better than this. We’ll definitely be back!",
       date: '1 week ago'
     },
     {
@@ -61,7 +77,7 @@ export default function ReviewsSection() {
       name: 'The Martinez Group',
       location: 'Miami, FL',
       rating: 5,
-      text: "Best group activity ever! We had 6 people and everyone had a blast. The boat is so cool and unique - nothing like it anywhere else. Great value and amazing memories made!",
+      text: "Great Value, Tons of Fun If you’re looking for something fun and different for a small group, Pink Caddy Cruise is the way to go! The pricing was very fair, especially compared to other options in the area. Our captain, Nina, was easygoing and fun, and the whole experience felt personal and relaxing.",
       date: '5 days ago'
     },
     {
@@ -69,11 +85,10 @@ export default function ReviewsSection() {
       name: 'Emily & Jake W.',
       location: 'Fort Myers, FL',
       rating: 5,
-      text: "Our honeymoon cruise was absolutely perfect! The pink Cadillac boat is so romantic and unique. Captain was wonderful and the sunset views were breathtaking. Highly recommend for special occasions!",
+      text: "Bachelorette Party Perfection We booked a 3-hour Pink Caddy Cruise sandbar adventure for a bachelorette party—and it couldn’t have gone better. Captain Zane knew exactly where to take us for fun and privacy. From lounging in the water to dancing on the boat, every second was a blast.",
       date: '3 days ago'
     }
   ];
-
   const totalPages = Math.ceil(reviews.length / reviewsPerPage);
   const currentReviews = reviews.slice(currentIndex, currentIndex + reviewsPerPage);
 
@@ -97,18 +112,20 @@ export default function ReviewsSection() {
             What Our Guests Say
           </h2>
           <p className="text-xl text-brand-teal/80 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our happy passengers have to say about their Cruisecaddy experience.
+            Don&rsquo;t just take our word for it. Here&rsquo;s what our happy passengers have to say about their Cruisecaddy experience.
           </p>
         </div>
 
         <div className="relative">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div ref={gridRef} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             {currentReviews.map((review) => (
               <div
                 key={review.id}
-                className="bg-brand-light p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-brand-pink/30"
+                className="bg-brand-light p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-brand-pink/30 h-full flex flex-col overflow-hidden"
+                data-review-card
+                style={{ height: cardFixedHeight }}
               >
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between mb-4 h-6">
                   <div className="flex text-brand-accent">
                     {[...Array(review.rating)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 fill-current" />
@@ -117,11 +134,11 @@ export default function ReviewsSection() {
                   <Quote className="h-6 w-6 text-brand-mint opacity-50" />
                 </div>
                 
-                <p className="text-brand-teal/90 mb-4 leading-relaxed italic">
-                  "{review.text}"
+                <p className="text-brand-teal/90 mb-4 leading-relaxed italic flex-1 text-left overflow-hidden">
+                  &ldquo;{review.text}&rdquo;
                 </p>
                 
-                <div className="border-t border-brand-pink/20 pt-4">
+                <div className="border-t border-brand-pink/20 pt-4 mt-auto text-left">
                   <div className="font-semibold text-brand-teal">{review.name}</div>
                   <div className="text-sm text-brand-teal/60">{review.location}</div>
                   <div className="text-xs text-brand-teal/50 mt-1">{review.date}</div>
@@ -130,7 +147,6 @@ export default function ReviewsSection() {
             ))}
           </div>
 
-          {/* Navigation Arrows */}
           {totalPages > 1 && (
             <div className="flex items-center justify-center mt-8 space-x-4">
               <button
@@ -179,7 +195,7 @@ export default function ReviewsSection() {
 
         <div className="text-center mt-12">
           <p className="text-brand-teal/70 mb-4">
-            Join hundreds of satisfied guests who've experienced the magic of Cruisecaddy
+            Join hundreds of satisfied guests who&rsquo;ve experienced the magic of Cruisecaddy
           </p>
           <div className="flex items-center justify-center space-x-1">
             <div className="flex text-brand-accent">
