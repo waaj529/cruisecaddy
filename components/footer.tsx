@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Phone, MapPin, Clock, Facebook, Instagram, Music } from 'lucide-react';
 import CaddyCruiseLogo from '@/public/logo/fe526dba-80d5-460d-bff0-81b7583ba56c.png';
+import PrivacyPolicyDialog from '@/components/privacy-policy-dialog';
 
 export default function Footer() {
   return (
@@ -136,9 +137,11 @@ export default function Footer() {
             </p>
             
             <div className="flex items-center space-x-6 text-sm">
-              <a href="/privacy" className="text-white/80 hover:text-brand-mint transition-colors">
-                Privacy Policy
-              </a>
+              <PrivacyPolicyDialog>
+                <button className="text-white/80 hover:text-brand-mint transition-colors">
+                  Privacy Policy
+                </button>
+              </PrivacyPolicyDialog>
               <a href="/terms" className="text-white/80 hover:text-brand-mint transition-colors">
                 Terms of Service
               </a>
