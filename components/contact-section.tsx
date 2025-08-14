@@ -38,7 +38,7 @@ export default function ContactSection() {
                     Departure Location
                   </h3>
                   <p className="text-brand-teal/80">
-                    Nora Patterson<br />
+                    Nora Patterson Bay Island Park<br />
                     946 Siesta Dr<br />
                     Sarasota, FL 34242
                   </p>
