@@ -109,12 +109,18 @@ export default function FAQSection() {
           <Button onClick={handleBookTour} size="lg" className="mr-4 mb-4">
             Book a Tour
           </Button>
-          <a
-            href="tel:+19417777465"
-            className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-brand-teal text-brand-teal rounded-lg hover:bg-brand-teal hover:text-white transition-colors font-medium"
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="mb-4"
           >
-            Call (941) 777-7465
-          </a>
+            <a
+            href="tel:+19417777465"
+            >
+              Call (941) 777-7465
+            </a>
+          </Button>
         </div>
       </div>
     </section>
