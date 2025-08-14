@@ -101,7 +101,7 @@ export default function ContactSection() {
           <div className="relative">
             <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl">
               <iframe
-                title="Map showing Marina Jack in Sarasota, Florida"
+                title="Map showing Nora Patterson Bay Island Park in Sarasota, Florida"
                 src="https://www.google.com/maps?q=Marina+Jack,+2+Marina+Plaza,+Sarasota,+FL+34236&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
