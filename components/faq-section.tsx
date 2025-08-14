@@ -40,16 +40,16 @@ export default function FAQSection() {
       answer: 'We accept credit cards via stripe, 4% convenience fee may apply at checkout. Payment is typically due at the time of booking unless otherwise arranged.'
     },
     {
-      question: 'Are there restrooms on board?',
-      answer: 'Our boat has a clean, private restroom facility on board for your convenience during the tour. We also make stops near facilities during longer tours if needed.'
+      question: 'What happens if the weather is bad on tour day?',
+      answer: 'Tours may continue in light rain, but if conditions are unsafe, we’ll cancel or reschedule at no extra cost.'
     },
     {
-      question: 'What happens if the weather is bad?',
-      answer: 'Safety is our top priority. If weather conditions are unsafe, we\'ll reschedule your tour at no charge or provide a full refund. We monitor weather closely and will contact you if changes are needed.'
+      question: 'What should I bring—are food and drinks allowed?',
+      answer: 'Bring essentials like sunscreen, water, and a snack. You can bring your own  drinks . We provide a cooler with cold ice.'
     },
     {
-      question: 'How many people can the boat accommodate?',
-      answer: 'Our pink Cadillac boat comfortably accommodates up to 12 passengers. This intimate group size ensures everyone gets the personal attention and space they deserve for the perfect experience.'
+      question: 'Is it safe if I can’t swim or am bringing kids?',
+      answer: 'Absolutely. Life jackets are provided to all passengers, and children and non-swimmers are welcome. Safety is our top priority.'
     }
   ];
 
