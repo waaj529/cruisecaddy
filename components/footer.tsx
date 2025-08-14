@@ -119,8 +119,8 @@ export default function Footer() {
                 <Clock className="h-6 w-6 text-brand-mint mt-1 flex-shrink-0" />
                 <div className="pt-0.5">
                   <p className="text-white/80 text-sm">
-                    Tours: 8 AM - 8 PM<br />
-                    Booking: 8 AM - 6 PM
+                    Tours: 10 AM - 9 PM<br />
+                    Booking: 10 AM - 9 PM
                   </p>
                 </div>
               </div>
