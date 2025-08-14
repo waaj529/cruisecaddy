@@ -132,10 +132,10 @@ export default function BookingSection() {
                   src={activeUrl}
                   title="Setmore Booking Calendar"
                   className="w-full border-0"
-                  style={{ height: 'clamp(520px, 68vh, 740px)' }}
+                  style={{ height: 'clamp(480px, 60vh, 700px)' }}
                   loading="lazy"
                   allow="payment; web-share"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  referrerPolicy="strict-origin-when-cross-origin"
                 />
               </div>
             </div>
