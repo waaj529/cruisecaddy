@@ -12,15 +12,10 @@ export default function OurStoryContent() {
               How It All Started
             </h2>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
-              It all began with a simple dream: to create something truly unique on Sarasota Bay. 
-              Our founder, a lifelong boating enthusiast and classic car lover, had a vision that 
-              would combine both passions into one unforgettable experience.
+              The boat is a one-of-a-kind, historic creation by Captain Joe Fox. While driving down U.S. 1 in the Florida Keys, Fox spotted a vintage Cadillac limousine and exclaimed to his wife, “Follow that limo!”
             </p>
             <p className="text-lg text-brand-teal/90 leading-relaxed">
-              After years of planning and custom design work, the pink Cadillac boat was born. 
-              This isn&rsquo;t just any boat – it&rsquo;s a carefully crafted vessel that captures the 
-              elegance and style of a classic Cadillac while providing all the safety and 
-              comfort needed for the perfect bay cruise.
+              Determined, he persuaded the limo driver to stop, introduced himself, and began taking detailed photographs and measurements. The driver chuckled, telling Fox, “You’re wacky.” Undeterred, Fox started building the floating limo the very next day—bringing to life a truly unique vessel that blends classic style with nautical adventure.
             </p>
           </div>
           
