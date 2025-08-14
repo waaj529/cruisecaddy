@@ -32,7 +32,7 @@ export default function FAQSection() {
       answer: 'Yes—it’s highly recommended to reserve your spot ahead of time. Walk-in availability is not guaranteed.'
     },
     {
-      question: ' What is the cancellation and weather policy',
+      question: ' What is the cancellation and weather policy?',
       answer: 'You may cancel up to 30+ days in advance for a full refund. If we cancel due to unsafe weather, you\'ll receive a full refund or the option to reschedule.'
     },
     {
