@@ -66,7 +66,7 @@ export default function BookingSection() {
       number: '3',
       icon: Wine,
       title: 'Bring Your Drinks & Cruise!',
-      description: 'Pack your favorite beverages, meet us at the marina, and get ready for an unforgettable Sarasota Bay experience!'
+      description: 'Pack your favorite beverages, meet us at Nora Patterson Bay Island Park, and get ready for an unforgettable Sarasota Bay experience!'
     }
   ];
 
