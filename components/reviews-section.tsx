@@ -37,9 +37,7 @@ export default function ReviewsSection() {
       name: 'Mike & Jessica R.',
       location: 'Orlando, FL',
       rating: 5,
-      text: "Couples Cruise to Remember My partner and I took an evening cruise with Captain Jo, and it honestly felt like a scene from a movie. The boat is charming and just quirky enough to be romantic. We toasted champagne under the stars and didn’t want it to end.
-
-",
+      text: `Couples Cruise to Remember My partner and I took an evening cruise with Captain Jo, and it honestly felt like a scene from a movie. The boat is charming and just quirky enough to be romantic. We toasted champagne under the stars and didn't want it to end.`,
       date: '1 month ago'
     },
     {
