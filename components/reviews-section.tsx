@@ -29,7 +29,7 @@ export default function ReviewsSection() {
       name: 'Sarah M.',
       location: 'Tampa, FL',
       rating: 5,
-      text: "Couples Cruise to Remember My partner and I took an evening cruise with Captain Jo, and it honestly felt like a scene from a movie. The boat is charming and just quirky enough to be romantic. We toasted champagne under the stars and didn’t want it to end.",
+      text: "We booked the CaddyCruise for a sunset tour, and it completely exceeded our expectations. The boat was super comfortable, the vibes were perfect, and the views were unreal. Our captain was friendly, knowledgeable, and made everyone feel at ease. We got some amazing photos, and the whole ride felt like something out of a movie. Would 100% recommend this to anyone looking for a unique and fun way to experience the water. We'll definitely be back!",
       date: '2 weeks ago'
     },
     {
@@ -37,7 +37,9 @@ export default function ReviewsSection() {
       name: 'Mike & Jessica R.',
       location: 'Orlando, FL',
       rating: 5,
-      text: "Music, Dancing & Sunset Views The vibe was perfect—good tunes, warm breeze, and the best view of the sunset. Captain Marcus knew all the best photo spots and let us hook up our playlist to the boat’s speaker system. Felt like our own little party on the water.",
+      text: "Couples Cruise to Remember My partner and I took an evening cruise with Captain Jo, and it honestly felt like a scene from a movie. The boat is charming and just quirky enough to be romantic. We toasted champagne under the stars and didn’t want it to end.
+
+",
       date: '1 month ago'
     },
     {
@@ -45,7 +47,7 @@ export default function ReviewsSection() {
       name: 'The Johnson Family',
       location: 'Sarasota, FL',
       rating: 5,
-      text: "Sandbar Fun with Friends We booked a private Pink Caddy Cruise to the sandbar with six of our closest friends. Captain Layla was so friendly and fun. She brought beach games and even helped us take group photos. This was hands-down the best beach day we’ve had in years.",
+      text: "Music, Dancing & Sunset Views The vibe was perfect—good tunes, warm breeze, and the best view of the sunset. Captain Marcus knew all the best photo spots and let us hook up our playlist to the boat’s speaker system. Felt like our own little party on the water.",
       date: '3 weeks ago'
     },
     {
@@ -53,7 +55,7 @@ export default function ReviewsSection() {
       name: 'David L.',
       location: 'Naples, FL',
       rating: 5,
-      text: "Chill Day, No Crowds My wife and I booked a midday cruise with Captain Eli, and it was everything we needed. Quiet, peaceful, and not crowded at all. Floating on the water with a cold drink and great conversation—it was the highlight of our trip to Sarasota.",
+      text: "Sandbar Fun with Friends We booked a private Pink Caddy Cruise to the sandbar with six of our closest friends. Captain Layla was so friendly and fun. She brought beach games and even helped us take group photos. This was hands-down the best beach day we’ve had in years.",
       date: '1 week ago'
     },
     {
@@ -61,7 +63,7 @@ export default function ReviewsSection() {
       name: 'Amanda K.',
       location: 'St. Petersburg, FL',
       rating: 5,
-      text: "Birthday Bash on the Water We surprised my sister with a Pink Caddy Cruise for her birthday, and it was a total hit! Captain Sierra made the whole ride feel like a VIP celebration. We had music, drinks, and gorgeous views—what more could you want? This will definitely become a birthday tradition.",
+      text: "Chill Day, No Crowds My wife and I booked a midday cruise with Captain Eli, and it was everything we needed. Quiet, peaceful, and not crowded at all. Floating on the water with a cold drink and great conversation—it was the highlight of our trip to Sarasota.",
       date: '4 days ago'
     },
     {
@@ -69,7 +71,7 @@ export default function ReviewsSection() {
       name: 'Robert & Linda T.',
       location: 'Bradenton, FL',
       rating: 5,
-      text: "First Time, Won’t Be the Last! It was our first time on a Pink Caddy Cruise boat, and we were blown away. Floating on clear water with a drink in hand, good company, and a great captain—Leo—it just doesn’t get better than this. We’ll definitely be back!",
+      text: "Birthday Bash on the Water We surprised my sister with a Pink Caddy Cruise for her birthday, and it was a total hit! Captain Sierra made the whole ride feel like a VIP celebration. We had music, drinks, and gorgeous views—what more could you want? This will definitely become a birthday tradition.",
       date: '1 week ago'
     },
     {
@@ -77,7 +79,7 @@ export default function ReviewsSection() {
       name: 'The Martinez Group',
       location: 'Miami, FL',
       rating: 5,
-      text: "Great Value, Tons of Fun If you’re looking for something fun and different for a small group, Pink Caddy Cruise is the way to go! The pricing was very fair, especially compared to other options in the area. Our captain, Nina, was easygoing and fun, and the whole experience felt personal and relaxing.",
+      text: "First Time, Won’t Be the Last! It was our first time on a Pink Caddy Cruise boat, and we were blown away. Floating on clear water with a drink in hand, good company, and a great captain—Leo—it just doesn’t get better than this. We’ll definitely be back!",
       date: '5 days ago'
     },
     {
