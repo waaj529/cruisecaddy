@@ -121,24 +121,24 @@ export default function ReviewsSection() {
             {currentReviews.map((review) => (
               <div
                 key={review.id}
-                className="bg-brand-light p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-brand-pink/30 h-full flex flex-col overflow-hidden"
+                className="bg-brand-light p-5 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-brand-pink/30 h-full flex flex-col overflow-hidden"
                 data-review-card
                 style={{ height: cardFixedHeight }}
               >
-                <div className="flex items-center justify-between mb-4 h-6">
+                <div className="flex items-center justify-between mb-3 h-5">
                   <div className="flex text-brand-accent">
                     {[...Array(review.rating)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                  <Quote className="h-6 w-6 text-brand-mint opacity-50" />
+                  <Quote className="h-5 w-5 text-brand-mint opacity-50" />
                 </div>
                 
-                <p className="text-brand-teal/90 mb-4 leading-relaxed italic flex-1 text-left overflow-hidden">
+                <p className="text-brand-teal/90 mb-3 leading-snug italic flex-1 text-left overflow-hidden text-sm">
                   &ldquo;{review.text}&rdquo;
                 </p>
                 
-                <div className="border-t border-brand-pink/20 pt-4 mt-auto text-left">
+                <div className="border-t border-brand-pink/20 pt-3 mt-auto text-left">
                   <div className="font-semibold text-brand-teal">{review.name}</div>
                   <div className="text-sm text-brand-teal/60">{review.location}</div>
                   <div className="text-xs text-brand-teal/50 mt-1">{review.date}</div>
