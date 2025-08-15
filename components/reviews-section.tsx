@@ -29,7 +29,7 @@ export default function ReviewsSection() {
       name: 'Sarah M.',
       location: 'Tampa, FL',
       rating: 5,
-      text: "We booked the CaddyCruise for a sunset tour, and it completely exceeded our expectations. The boat was super comfortable, the vibes were perfect, and the views were unreal. Our captain was friendly, knowledgeable, and made everyone feel at ease. We got some amazing photos, and the whole ride felt like something out of a movie. Would 100% recommend this to anyone looking for a unique and fun way to experience the water. We'll definitely be back!",
+      text: "The Caddy Cruise was an absolute vibe! Cruising in a Cadillac-shaped boat was the highlight of our trip — smooth ride, amazing views, and total style. Highly recommend!",
       date: '2 weeks ago'
     },
     {
