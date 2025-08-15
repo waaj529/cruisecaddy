@@ -14,7 +14,7 @@ export default function WhyChooseSection() {
     },
     {
       icon: Eye,
-      title: 'Stunning Sarasota Bay Views',
+      title: 'Stunning Views',
       description: 'Experience breathtaking sunsets, dolphin sightings, and pristine Florida waters.'
     },
     {
