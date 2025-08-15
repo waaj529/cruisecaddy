@@ -30,7 +30,7 @@ export default function ContactSection() {
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
+                <div className="w-16 h-16 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
                   <MapPin className="h-6 w-6 text-brand-teal group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
@@ -48,7 +48,7 @@ export default function ContactSection() {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
+                <div className="w-16 h-16 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
                   <Phone className="h-6 w-6 text-brand-teal group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
@@ -69,7 +69,7 @@ export default function ContactSection() {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
+                <div className="w-16 h-16 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
                   <Clock className="h-6 w-6 text-brand-teal group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
