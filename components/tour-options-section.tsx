@@ -4,14 +4,34 @@ import { Button } from '@/components/ui/button';
 import { Clock, Users, Waves, MapPin } from 'lucide-react';
 
 export default function TourOptionsSection() {
-  const handleBookTour = () => {
+  const cleanUrl = (value?: string) => {
+    const candidate = (value || '').trim();
+    if (!candidate) return '';
+    if (!/^https?:\/\//i.test(candidate)) return '';
+    return candidate;
+  };
+
+  // Map tour ids to specific Setmore service deep links via env vars
+  const serviceUrlById: Record<string, string | undefined> = {
+    'early-sunset': cleanUrl(process.env.NEXT_PUBLIC_SETMORE_SERVICE_RISE_OR_REST_URL),
+    '2-hour': cleanUrl(process.env.NEXT_PUBLIC_SETMORE_SERVICE_2_HOUR_URL),
+    '4-hour': cleanUrl(process.env.NEXT_PUBLIC_SETMORE_SERVICE_4_HOUR_URL)
+  };
+
+  const handleBookTour = (serviceId?: string) => {
+    const targetUrl = serviceId ? serviceUrlById[serviceId] : undefined;
     const el = document.getElementById('Setmore_button_iframe') as HTMLAnchorElement | null;
-    if (el) {
+    if (el && targetUrl) {
+      el.href = targetUrl;
       el.click();
-    } else {
-      // Fallback: navigate to in-page booking section instead of opening a new tab
-      window.location.href = '/#booking';
+      return;
     }
+    if (targetUrl) {
+      window.open(targetUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    // Fallback: navigate to in-page booking section instead of opening a new tab
+    window.location.href = '/#booking';
   };
 
   const tours = [
@@ -124,7 +144,7 @@ export default function TourOptionsSection() {
                 </div>
 
                 <Button 
-                  onClick={handleBookTour}
+                  onClick={() => handleBookTour(tour.id)}
                   className="w-full group-hover:scale-105 transition-transform mt-auto"
                   size="lg"
                 >
