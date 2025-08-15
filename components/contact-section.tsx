@@ -31,7 +31,7 @@ export default function ContactSection() {
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
                 <div className="w-16 h-16 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
-                  <MapPin className="h-6 w-6 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                  <MapPin className="h-8 w-8 text-brand-teal group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-brand-teal mb-2">
@@ -49,7 +49,7 @@ export default function ContactSection() {
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
                 <div className="w-16 h-16 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
-                  <Phone className="h-6 w-6 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                  <Phone className="h-8 w-8 text-brand-teal group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-brand-teal mb-2">
@@ -70,7 +70,7 @@ export default function ContactSection() {
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-start space-x-4">
                 <div className="w-16 h-16 bg-brand-mint rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-brand-teal transition-colors duration-300 group">
-                  <Clock className="h-6 w-6 text-brand-teal group-hover:text-white transition-colors duration-300" />
+                  <Clock className="h-8 w-8 text-brand-teal group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-brand-teal mb-2">
