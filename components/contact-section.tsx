@@ -91,7 +91,7 @@ export default function ContactSection() {
               </Button>
               <a
                 href="tel:+19417777465"
-                className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-white text-brand-teal border-2 border-brand-teal rounded-lg hover:bg-brand-teal hover:text-white transition-colors font-medium"
+                className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-transparent text-white border-2 border-white rounded-lg hover:bg-white hover:text-brand-teal transition-colors font-medium"
               >
                 Call Now
               </a>
