@@ -113,7 +113,7 @@ export default function FAQSection() {
             asChild
             variant="outline"
             size="lg"
-            className="mb-4"
+            className="mb-4 border-2 border-white bg-transparent text-white hover:bg-white hover:text-brand-teal"
           >
             <a
             href="tel:+19417777465"
